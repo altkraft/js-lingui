@@ -70,7 +70,7 @@ async function prepareNpmPackage(name) {
     asyncCopyTo(`packages/${name}/npm`, `build/packages/${name}`)
   ])
   const tgzName = (await asyncExecuteCommand(
-    `npm pack build/packages/${name}`
+      `npm pack build/packages/${name}`
   )).trim()
   await asyncRimRaf(`build/packages/${name}`)
   await asyncExtractTar(getTarOptions(tgzName, name))
