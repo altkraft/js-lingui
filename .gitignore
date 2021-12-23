@@ -1,5 +1,5 @@
 node_modules/
-build/packages/
+#build/packages/
 .yalc/
 yalc.lock
 docs/_build/
